@@ -6,4 +6,4 @@ requests
 beautifulsoup4
 lxml_html_clean
 reportlab
-newspaper
+newspaper3k
