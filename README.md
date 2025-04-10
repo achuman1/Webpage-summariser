@@ -13,13 +13,13 @@ This is a full-stack web application that generates concise, section-wise summar
 - Allows users to download the summary as a formatted PDF
 
 ## Technologies Used:
-#### Frontend:
+### Frontend:
 - React
 
 - HTML/CSS
 
 - GitHub Pages (for deployment)
-#### Backend:
+### Backend:
 Python
 
 - Flask
