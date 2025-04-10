@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load summarizer
-summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
+summarizer = pipeline("summarization", model="Falconsai/text_summarization")
 
 @app.route('/summarize', methods=['POST'])
 def summarize():
@@ -90,6 +90,7 @@ def download_pdf():
     return send_file(buffer, as_attachment=True, download_name="summary.pdf", mimetype='application/pdf')
 
 
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
