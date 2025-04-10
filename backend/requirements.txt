@@ -1,0 +1,8 @@
+flask
+flask-cors
+transformers
+torch
+requests
+beautifulsoup4
+lxml_html_clean
+reportlab
