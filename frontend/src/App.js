@@ -13,7 +13,7 @@ function App() {
     setSections([]);
 
     try {
-      const response = await fetch("http://localhost:5000/summarize", {
+      const response = await fetch("https://webpage-summariser-backend.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
@@ -34,7 +34,7 @@ function App() {
   };
 
   const handleDownloadPDF = async () => {
-    const response = await fetch("http://localhost:5000/download-pdf", {
+    const response = await fetch("https://webpage-summariser-backend.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ sections }),
